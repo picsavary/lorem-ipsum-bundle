@@ -4,8 +4,6 @@ author: anne marie savary <picsavary@mac.com>
 
 This project and its code is under MIT License
 Required Symfony ^4.3
-# travis ci
-*https://travis-ci.org/picsavary/lorem-ipsum-bundle*
 
 # Hello LoremIpsumBundle!
 LoremIpsumBundle is a way for you to generate "fake text" into
