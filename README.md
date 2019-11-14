@@ -3,12 +3,13 @@
 author: anne marie savary <picsavary@mac.com>
 
 This project and its code is under MIT License
-Required Symfony ^4.3
 
-# Hello LoremIpsumBundle!
-LoremIpsumBundle is a way for you to generate "fake text" into
-your Symfony application, but with *just* a little bit more joy
-than your normal lorem ipsum.
+Required: Symfony ^4.3 - Php ^7.2
+
+
+# LoremIpsumBundle for Symfony ^4.3
+LoremIpsumBundle is a way for you to generate english "fake text" into
+your Symfony ^4.3 application.
 Install the package with:
 ```console
 composer require amps/lorem-ipsum-bundle
@@ -47,17 +48,20 @@ amps_lorem_ipsum:
     min_sunshine:         3
 ```
 ## Extending the Word List
-If you're feeling *especially* creative and excited, you can add 
-your *own* words to the word generator!
+You can add your *own* words to the word generator!
 To do that, create a class that implements `WordProviderInterface`:
 ```php
 namespace App\Service;
 use Amps\LoremIpsumBundle\WordProviderInterface;
 class CustomWordProvider implements WordProviderInterface
 {
+    // 
     public function getWordList(): array
     {
-        return ['beach'];
+       $words[] = 'beach';
+       $words[] = $title;
+       $words[] = $town;
+       return $words;
     }
 }
 ```
@@ -65,6 +69,9 @@ And... that's it! If you're using the standard service configuration,
 your new class will automatically be registered as a service and used
 by the system. If you are not, you will need to register this class
 as a service and tag it with `amps_ipsum_word_provider`.
+## Thanks
+Thanks to knpu_lorem_ipsum_bundle.
+
 ## Contributing
 Of course, open source is fueled by everyone's ability to give just a little bit
 of their time for the greater good. If you'd like to see a feature or add some of
