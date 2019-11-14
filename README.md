@@ -11,7 +11,7 @@ your Symfony application, but with *just* a little bit more joy
 than your normal lorem ipsum.
 Install the package with:
 ```console
-composer require amps/lorem-ipsum-bundle --dev
+composer require amps/lorem-ipsum-bundle
 ```
 And... that's it! If you're *not* using Symfony Flex, you'll also
 need to enable the `Amps\LoremIpsumBundle\AmpsLoremIpsumBundle`
