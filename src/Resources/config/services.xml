@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+        http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="amps_lorem_ipsum.knpu_ipsum" class="Amps\LoremIpsumBundle\KnpUIpsum" public="true">
+            <argument type="collection" /><!-- filled in via a compiler pass for early SF version -->
+            <!--<argument type="tagged" tag="amps_ipsum_word_provider" /> --><!--
+            This second way will tell Symfony to find all services with this tag, and pass them as a collection
+            for higher than 3.4 SF versions
+            In this case, change array argument to iterable in KnpUIpsum class Constructor -->
+        </service>
+
+        <service id="amps_lorem_ipsum.knpu_word_provider" class="Amps\LoremIpsumBundle\KnpUWordProvider">
+            <tag name="amps_ipsum_word_provider" />
+        </service>
+
+
+        <service id="amps_lorem_ipsum.ipsum_api_controller" class="Amps\LoremIpsumBundle\Controller\IpsumApiController" public="true">
+            <argument type="service" id="amps_lorem_ipsum.knpu_ipsum" />
+            <argument type="service" id="event_dispatcher" on-invalid="null" /><!-- eventdispatcher comes from frameworkBundle -->
+        </service>
+
+
+        <service id="amps_lorem_ipsum.word_provider" alias="amps_lorem_ipsum.knpu_word_provider" public="false" />
+        <service id="Amps\LoremIpsumBundle\KnpUIpsum" alias="amps_lorem_ipsum.knpu_ipsum" public="false" />
+    </services>
+</container>
+
