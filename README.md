@@ -1,6 +1,6 @@
 # lorem-ipsum-bundle
 
-author: anne marie savary <picsavary@mac.com>
+author: anne marie savary <picsavary@icloud.com>
 
 This project and its code is under MIT License
 

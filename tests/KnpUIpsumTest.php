@@ -2,7 +2,7 @@
 /**
  * Last modified: 11/11/2019 16:55
  *
- * Copyright (c) 2019. picsavary@mac.com
+ * Copyright (c) 2019. picsavary@icloud.com
  *
  */
 

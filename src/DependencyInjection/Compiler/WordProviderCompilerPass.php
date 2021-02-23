@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2018. picsavary@mac.com
+ * Copyright (c) 2018. picsavary@icloud.com
  *
  */
 

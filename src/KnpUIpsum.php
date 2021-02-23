@@ -2,7 +2,7 @@
 
 
 /**
- * Copyright (c) 2018. picsavary@mac.com
+ * Copyright (c) 2018. picsavary@icloud.com
  */
 
 declare(strict_types=1);
