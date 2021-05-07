@@ -12,8 +12,8 @@
     "require": {
         "php": "^7.4",
         "symfony/config": "^5.2",
-        "symfony/dependency-injection": "5.0.*",
-        "symfony/http-kernel": "5.0.*"
+        "symfony/dependency-injection": "^5.1.5",
+        "symfony/http-kernel": "^5.1.5"
     },
     "autoload": {
         "psr-4": {
@@ -26,9 +26,9 @@
         }
     },
     "require-dev": {
-        "symfony/phpunit-bridge": "5.0.*",
-        "symfony/framework-bundle": "5.0.*",
-        "symfony/browser-kit": "5.0.*"
+        "symfony/phpunit-bridge": "^5.1.5",
+        "symfony/framework-bundle": "^5.1.5",
+        "symfony/browser-kit": "^5.1.5"
 
     }
 }
