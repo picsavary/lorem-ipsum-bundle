@@ -12,7 +12,7 @@ LoremIpsumBundle is a way for you to generate english "fake text" into
 your Symfony ^5.0 application.
 Install the package with:
 ```console
-composer require amps/lorem-ipsum-bundle
+composer require amps/lorem-ipsum-bundle dev-master
 ```
 And... that's it! If you're *not* using Symfony Flex, you'll also
 need to enable the `Amps\LoremIpsumBundle\AmpsLoremIpsumBundle`
