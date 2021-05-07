@@ -7,7 +7,7 @@ This project and its code is under MIT License
 Required: Symfony ^5.0 - Php ^7.4
 
 
-# LoremIpsumBundle for Symfony ^4.3
+# LoremIpsumBundle for Symfony ^5.0
 LoremIpsumBundle is a way for you to generate english "fake text" into
 your Symfony ^5.0 application.
 Install the package with:
