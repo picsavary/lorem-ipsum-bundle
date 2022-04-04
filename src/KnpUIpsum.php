@@ -90,9 +90,9 @@ class KnpUIpsum
      * @return array|string string or array of generated lorem ipsum words
      * @throws \Exception
      */
-    public function getWords(int $count = 1, bool $asArray = false) // int
+    public function getWords($count = 1, bool $asArray = false) // int
     {
-        $count = $count < 1 ? 1 : $count;
+        $count = (null === $count ||  $count < 1) ? 1 : $count;
 
         $words = array();
         $wordCount = 0;
