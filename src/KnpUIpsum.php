@@ -72,7 +72,7 @@ class KnpUIpsum
         for ($i = 0; $i < $count; $i++) {
             $wordCount = $this->gauss(16, 5.08);
             // avoid very short sentences
-            $wordCount  = $wordCount < 4 ? 4 : $wordCount;
+            $wordCount  = $wordCount < 4 ? 4 : intval($wordCount);
             $sentences[] = $this->getWords($wordCount, true);
         }
 
