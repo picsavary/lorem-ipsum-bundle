@@ -51,11 +51,8 @@ class KnpUIpsum
 
     /**
      * Returns several paragraphs of random ipsum text.
-     *
      * @param int $count
-     *
      * @return string
-     *
      */
     public function getParagraphs(int $count = 3): string
     {
@@ -86,19 +83,14 @@ class KnpUIpsum
 
     /**
      * Credit to joshtronic/php-loremipsum! https://github.com/joshtronic/php-loremipsum
-     *
      * Generates words of lorem ipsum.
-     *
      * @access public
-     *
-     * @param  integer $count how many words to generate
-     *
-     * @param  boolean $asArray whether an array or a string should be returned
-     *
-     * @return mixed   string or array of generated lorem ipsum words
-     *
+     * @param int $count how many words to generate
+     * @param bool $asArray whether an array or a string should be returned
+     * @return array|string string or array of generated lorem ipsum words
+     * @throws \Exception
      */
-    public function getWords( $count = 1, bool $asArray = false) // int
+    public function getWords(int $count = 1, bool $asArray = false) // int
     {
         $count = $count < 1 ? 1 : $count;
 
