@@ -11,9 +11,9 @@
     ],
     "require": {
         "php": "8.1.*",
-        "symfony/config": "5.4.2",
-        "symfony/dependency-injection": "5.4.2",
-        "symfony/http-kernel": "5.4.2"
+        "symfony/config": "^5.4.2",
+        "symfony/dependency-injection": "^5.4.2",
+        "symfony/http-kernel": "^5.4.2"
     },
     "autoload": {
         "psr-4": {
