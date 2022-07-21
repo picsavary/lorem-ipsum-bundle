@@ -11,9 +11,9 @@
     ],
     "require": {
         "php": "^8.1.4",
-        "symfony/config": "^5.4.9",
-        "symfony/dependency-injection": "^5.4.10",
-        "symfony/http-kernel": "^5.4.10",
+        "symfony/config": "6.0.*",
+        "symfony/dependency-injection": "6.0.*",
+        "symfony/http-kernel": "6.0.*",
         "symfony/flex": "^1.19.2"
     },
     "autoload": {
@@ -27,13 +27,19 @@
         }
     },
     "require-dev": {
-        "symfony/phpunit-bridge": "^5.4.10",
-        "symfony/framework-bundle": "^5.4.10",
-        "symfony/browser-kit": "^5.4.3"
+        "symfony/phpunit-bridge": "6.0.*",
+        "symfony/framework-bundle": "6.0.*",
+        "symfony/browser-kit": "6.0.*"
     },
     "config": {
         "allow-plugins": {
             "symfony/flex": true
+        }
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
         }
     }
 }

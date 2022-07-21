@@ -10,6 +10,11 @@
         <ini name="intl.default_locale" value="en" />
         <ini name="intl.error_level" value="0" />
         <ini name="memory_limit" value="-1" />
+
+        <!-- ###+ symfony/framework-bundle ### -->
+        <env name="APP_ENV" value="dev"/>
+        <env name="APP_SECRET" value="d78a6dcbded3286638d77d8c267e8152"/>
+        <!-- ###- symfony/framework-bundle ### -->
     </php>
     <testsuites>
         <testsuite name="Test suite">
