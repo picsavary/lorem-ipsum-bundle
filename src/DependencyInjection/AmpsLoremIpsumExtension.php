@@ -45,7 +45,7 @@ class AmpsLoremIpsumExtension extends Extension
         $container->registerForAutoconfiguration(WordProviderInterface::class)
             ->addTag('amps_ipsum_word_provider');
     }
-    public function getAlias()
+    public function getAlias(): string
     {
         return 'amps_lorem_ipsum';
     }
