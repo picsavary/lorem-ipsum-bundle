@@ -15,6 +15,7 @@ use Amps\LoremIpsumBundle\DependencyInjection\Compiler\WordProviderCompilerPass;
 use Amps\LoremIpsumBundle\DependencyInjection\AmpsLoremIpsumExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 
 class AmpsLoremIpsumBundle extends Bundle
 {
@@ -26,7 +27,7 @@ class AmpsLoremIpsumBundle extends Bundle
     /**
      * Overridden to allow for the custom extension alias.
      */
-    public function getContainerExtension()
+    public function getContainerExtension(): ?ExtensionInterface
     {
         // This does the same thing as the parent method getContainerExtension(),
         // but without that sanity check.
