@@ -14,7 +14,7 @@
         "symfony/config": "6.0.*",
         "symfony/dependency-injection": "6.0.*",
         "symfony/http-kernel": "6.0.*",
-        "symfony/flex": "^1.19.2"
+        "symfony/flex": "^2.1"
     },
     "autoload": {
         "psr-4": {
