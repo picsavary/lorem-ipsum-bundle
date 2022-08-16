@@ -4,12 +4,12 @@ author: anne marie savary <picsavary@icloud.com>
 
 This project and its code is under MIT License
 
-Required: Symfony ^5.1.5 - Php ^7.4
+Required: Symfony 6.0.* - Php ^8.1.4
 
 
-# LoremIpsumBundle for Symfony ^5.1.5
+# LoremIpsumBundle for Symfony 6.0.*
 LoremIpsumBundle is a way for you to generate english "fake text" into
-your Symfony ^5.1.5 application.
+your Symfony 6.0.* application.
 Install the package with:
 ```console
 composer require amps/lorem-ipsum-bundle dev-master
