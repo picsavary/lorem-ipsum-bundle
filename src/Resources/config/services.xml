@@ -17,12 +17,10 @@
             <tag name="amps_ipsum_word_provider" />
         </service>
 
-
         <service id="amps_lorem_ipsum.ipsum_api_controller" class="Amps\LoremIpsumBundle\Controller\IpsumApiController" public="true">
             <argument type="service" id="amps_lorem_ipsum.knpu_ipsum" />
             <argument type="service" id="event_dispatcher" on-invalid="null" /><!-- eventdispatcher comes from frameworkBundle -->
         </service>
-
 
         <service id="amps_lorem_ipsum.word_provider" alias="amps_lorem_ipsum.knpu_word_provider" public="false" />
         <service id="Amps\LoremIpsumBundle\KnpUIpsum" alias="amps_lorem_ipsum.knpu_ipsum" public="false" />

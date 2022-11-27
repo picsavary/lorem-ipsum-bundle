@@ -1,6 +1,6 @@
 # lorem-ipsum-bundle
 
-author: anne marie savary <picsavary@icloud.com>
+author: anne marie pic <annemarie.pic@orange.fr>
 
 This project and its code is under MIT License
 
@@ -49,10 +49,13 @@ amps_lorem_ipsum:
 ```
 ## Extending the Word List
 You can add your *own* words to the word generator!
-To do that, create a class that implements `WordProviderInterface`:
+To do that in your app, create a class that implements `WordProviderInterface`:
+
 ```php
 namespace App\Service;
+
 use Amps\LoremIpsumBundle\WordProviderInterface;
+
 class CustomWordProvider implements WordProviderInterface
 {
     // 

@@ -11,29 +11,21 @@ namespace Amps\LoremIpsumBundle;
 
 /**
  * Generate random "lorem ipsum" text KnpUniversity style!
- *
  * @author Ryan Weaver <ryan@knpuniversity.com>
- *
  */
 
 /**
  * Class KnpUIpsum
- *
  * @package Amps\LoremIpsumBundle
- *
  */
 class KnpUIpsum
 {
     /**
      * @var WordProviderInterface[]
-     *
      */
     private $wordProviders;
-
     private $unicornsAreReal;
-
     private $minSunshine;
-
     private $wordList;
 
     public function __construct(

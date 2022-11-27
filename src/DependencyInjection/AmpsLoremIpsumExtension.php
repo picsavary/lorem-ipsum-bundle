@@ -10,6 +10,7 @@
 declare(strict_types=1);
 
 namespace Amps\LoremIpsumBundle\DependencyInjection;
+
 use Amps\LoremIpsumBundle\WordProviderInterface;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -18,9 +19,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 /**
  * Class AmpsLoremIpsumExtension
- *
  * @package Amps\LoremIpsumBundle\DependencyInjection
- *
  */
 class AmpsLoremIpsumExtension extends Extension
 {
