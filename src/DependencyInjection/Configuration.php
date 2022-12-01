@@ -2,9 +2,7 @@
 
 /**
  * Last modified: 12/11/2019 15:45
- *
  * Copyright (c) 2019. picsavary@icloud.com
- *
  */
 
 declare(strict_types=1);
@@ -15,7 +13,7 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 class Configuration implements ConfigurationInterface
 {
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder(): TreeBuilder
     {
         $treeBuilder = new TreeBuilder('amps_lorem_ipsum');
         if (method_exists($treeBuilder, 'getRootNode' )){
