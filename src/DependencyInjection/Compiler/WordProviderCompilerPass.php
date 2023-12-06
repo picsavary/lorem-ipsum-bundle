@@ -18,7 +18,7 @@ class WordProviderCompilerPass implements CompilerPassInterface
     // The correct place for any logic that needs
     // to operate on the entire container, is a compiler pass
     // NOTE in extension class, the early container is empty
-    public function process(ContainerBuilder $container)
+    public function process(ContainerBuilder $container) : void
     {
         $definition = $container->getDefinition('amps_lorem_ipsum.knpu_ipsum');
         $references = [];
