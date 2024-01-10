@@ -17,10 +17,6 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-/**
- * Class AmpsLoremIpsumExtension
- * @package Amps\LoremIpsumBundle\DependencyInjection
- */
 class AmpsLoremIpsumExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container): void

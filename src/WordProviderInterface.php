@@ -8,10 +8,6 @@ declare(strict_types=1);
 
 namespace Amps\LoremIpsumBundle;
 
-/**
- * Interface WordProviderInterface
- * @package Amps\LoremIpsumBundle
- */
 interface WordProviderInterface
 {
     /**
