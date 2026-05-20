@@ -21,7 +21,7 @@ class IpsumApiController
 
     public function __construct(
         KnpUIpsum $knpUIpsum,
-        EventDispatcherInterface $eventDispatcher = null // eventdispatcher comes from frameworkBundle
+        ?EventDispatcherInterface $eventDispatcher = null // eventdispatcher comes from frameworkBundle
     )
     {
         $this->knpUIpsum = $knpUIpsum;
