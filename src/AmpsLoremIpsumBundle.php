@@ -19,7 +19,7 @@ use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 
 class AmpsLoremIpsumBundle extends Bundle
 {
-    public function build(ContainerBuilder $container)
+    public function build(ContainerBuilder $container): void
     {
         $container->addCompilerPass(new WordProviderCompilerPass());
     }
