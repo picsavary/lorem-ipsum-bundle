@@ -21,7 +21,6 @@ services:
             - '@?event_dispatcher'
 
     amps_lorem_ipsum.word_provider:
-        class: amps_lorem_ipsum.knpu_word_provider
         public: false
         alias: amps_lorem_ipsum.knpu_word_provider
 
