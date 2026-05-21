@@ -6,7 +6,7 @@ services:
         class: Amps\LoremIpsumBundle\KnpUIpsum
         public: true
         arguments:
-            type: 'collection'
+            $type: 'collection'
 
     amps_lorem_ipsum.knpu_word_provider:
         class: Amps\LoremIpsumBundle\KnpUIpsum
