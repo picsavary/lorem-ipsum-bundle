@@ -1,0 +1,5 @@
+# src/Ressources/config/routes.yaml
+
+amps_lorem_ipsum_api:
+    path: /
+    controller: amps_lorem_ipsum.ipsum_api_controller::index

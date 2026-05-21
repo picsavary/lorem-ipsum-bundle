@@ -1,0 +1,32 @@
+# src/Ressources/config/services.yaml
+
+services:
+
+    amps_lorem_ipsum.knpu_ipsum:
+        class: Amps\LoremIpsumBundle\KnpUIpsum
+        public: true
+        arguments:
+            type: 'collection'
+
+    amps_lorem_ipsum.knpu_word_provider:
+        class: Amps\LoremIpsumBundle\KnpUIpsum
+        tags:
+            - { name: amps_ipsum_word_provider }
+
+
+    mps_lorem_ipsum.ipsum_api_controller:
+        class: Amps\LoremIpsumBundle\Controller\IpsumApiController
+        arguments:
+            - '@amps_lorem_ipsum.knpu_ipsum'
+            - '@?event_dispatcher'
+
+    amps_lorem_ipsum.word_provider:
+        class: amps_lorem_ipsum.knpu_word_provider
+        public: false
+        alias: amps_lorem_ipsum.knpu_word_provider
+
+    Amps\LoremIpsumBundle\KnpUIpsum:
+        public: false
+        ## 'amps_lorem_ipsum.knpu_ipsum'
+
+

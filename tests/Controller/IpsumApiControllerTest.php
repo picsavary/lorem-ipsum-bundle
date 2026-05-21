@@ -34,18 +34,18 @@ class AmpsLoremIpsumControllerKernel extends Kernel
     {
         parent::__construct('test', true);
     }
-    public function registerBundles()
+    public function registerBundles(): iterable
     {
         return [
             new AmpsLoremIpsumBundle(),
             new FrameworkBundle()
         ];
     }
-    protected function configureRoutes(RouteCollectionBuilder $routes)
+    protected function configureRoutes(RouteCollectionBuilder $routes): void
     {
-        $routes->import(__DIR__.'/../../src/Resources/config/routes.xml', '/api');
+        $routes->import(__DIR__.'/../../src/Resources/config/routes.yaml', '/api');
     }
-    protected function configureContainer(ContainerBuilder $c, LoaderInterface $loader)
+    protected function configureContainer(ContainerBuilder $c, LoaderInterface $loader): void
     {
         $c->loadFromExtension(
             'framework',
@@ -54,7 +54,7 @@ class AmpsLoremIpsumControllerKernel extends Kernel
             ]
         );
     }
-    public function getCacheDir()
+    public function getCacheDir(): string
     {
         return __DIR__.'/../../var/cache/test/'.spl_object_hash($this);
     }
